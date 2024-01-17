@@ -48,6 +48,11 @@ nav .navbar-nav .nav-link {
   color: black;
 }
 
+.navbar-toggler {
+  border: 3px solid black;
+  background-color: black;
+}
+
 .section-container {
   padding: 70px;
   width: 100%;
@@ -73,4 +78,8 @@ footer {
   font-size: 2rem;
   padding: 30px;
   padding-top: 80px;
+}
+
+i {
+  width: 3rem;
 }/*# sourceMappingURL=style.css.map */

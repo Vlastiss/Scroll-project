@@ -32,6 +32,7 @@ nav {
     background-color: white
 }
 
+
 .home-container {
     @include flexPosition();
     text-align: center;
@@ -55,6 +56,10 @@ nav {
             color: black;
         }
     }
+}
+.navbar-toggler {
+    border: 3px solid black;
+    background-color: black;
 }
 
 .section-container {
@@ -82,4 +87,8 @@ footer {
     font-size: 2rem;
     padding: 30px;
     padding-top: 80px;
+}
+
+i {
+    width: 3rem;
 }
