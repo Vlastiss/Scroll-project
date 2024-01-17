@@ -65,4 +65,9 @@ button {
   z-index: -1;
   top: 45%;
   left: 50%;
+}
+
+.navbar {
+  position: absolute;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
