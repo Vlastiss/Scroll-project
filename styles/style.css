@@ -1,73 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Orbitron:wght@600&family=Poppins:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: url("./Vlastiss_widescreen_background_image_of_galaxy_colors_21a7ce25-2a54-43cd-9a26-a7940e1dedf6.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  border: 0px;
-  padding: 0;
-  display: grid;
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  margin: 50px 150px;
+  height: 100vh;
 }
-.container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.home-container h1 {
+  font-size: 100px;
+}
+.home-container button {
+  text-transform: uppercase;
+}
+
+.section-container {
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.501);
+  border: 1px solid white;
+  height: 100vh;
 }
-
-#background-image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  opacity: 50%;
-  z-index: -2;
-}
-
-h1 {
-  position: absolute;
-  margin: auto;
+.section-container h1 {
   text-align: center;
-  opacity: 100%;
-  z-index: -1;
-  font-size: 7rem;
-  top: 25%;
-  padding-left: 30%;
+  text-transform: uppercase;
+  background-color: rgba(128, 128, 128, 0.55);
 }
-
-p {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  opacity: 100%;
-  z-index: -1;
-  text-align: center;
-  top: 35%;
-  margin: 0 300px;
-}
-
-button {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  opacity: 100%;
-  z-index: -1;
-  top: 45%;
-  left: 50%;
-}
-
-.navbar {
-  position: absolute;
-  z-index: -1;
+.section-container h1 span {
+  color: teal;
 }/*# sourceMappingURL=style.css.map */
