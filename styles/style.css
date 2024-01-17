@@ -12,6 +12,13 @@ body {
   background-attachment: fixed;
 }
 
+nav {
+  background-color: transparent;
+}
+nav .navbar-nav .nav-link {
+  color: white;
+}
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -33,9 +40,10 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.501);
   border: 1px solid white;
-  height: 100vh;
+  height: calc(98vh - 44px);
 }
 .section-container h1 {
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(128, 128, 128, 0.55);
