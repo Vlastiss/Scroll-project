@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Orbitron:wght@600&family=Poppins:wght@300;400;700&display=swap");
 
+@mixin flexPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,17 +22,18 @@ body {
 
 nav {
     background-color: transparent;
+    transition: background-color 0.3s ease;
     
     .navbar-nav .nav-link{
         color: white;
     }
 }
+.navbar.bg-white {
+    background-color: white
+}
 
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flexPosition();
     text-align: center;
     color: white;
     margin: 50px 150px;
@@ -38,10 +46,19 @@ nav {
     button {
         text-transform: uppercase;
         // margin-bottom: 20vh;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+        }
     }
 }
 
 .section-container {
+    padding: 70px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.501);
     border: 1px solid white;
@@ -51,10 +68,18 @@ nav {
         font-size: 3rem;
         text-align: center;
         text-transform: uppercase;
-        background-color: rgba(128, 128, 128, 0.55);
+        // background-color: rgba(128, 128, 128, 0.55);
 
         span {
             color: teal;
         }
     }
+}
+
+footer {
+    @include flexPosition();
+    color: white;
+    font-size: 2rem;
+    padding: 30px;
+    padding-top: 80px;
 }

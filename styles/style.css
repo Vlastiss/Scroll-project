@@ -14,9 +14,14 @@ body {
 
 nav {
   background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 nav .navbar-nav .nav-link {
   color: white;
+}
+
+.navbar.bg-white {
+  background-color: white;
 }
 
 .home-container {
@@ -35,8 +40,16 @@ nav .navbar-nav .nav-link {
 .home-container button {
   text-transform: uppercase;
 }
+.home-container button a {
+  color: white;
+  text-decoration: none;
+}
+.home-container button a:hover {
+  color: black;
+}
 
 .section-container {
+  padding: 70px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.501);
   border: 1px solid white;
@@ -46,8 +59,18 @@ nav .navbar-nav .nav-link {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(128, 128, 128, 0.55);
 }
 .section-container h1 span {
   color: teal;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  padding: 30px;
+  padding-top: 80px;
 }/*# sourceMappingURL=style.css.map */
